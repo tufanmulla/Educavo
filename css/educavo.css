@@ -1,0 +1,700 @@
+/* usign google roboto fonts starts... */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* usign google roboto fonts ends. */
+
+
+/* usign google nunito fonts ends. */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* usign google nunito fonts ends. */
+
+
+/* some default css starts... */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: dimgray;
+  font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+}
+a{
+  text-decoration: none;
+}
+.slider_wrapper,.slider_wrapper h3,.slider_wrapper h2,.slider_wrapper,.slider_wrapper a {
+  font-family: 'Nunito', sans-serif;
+}
+.font_nunito{
+  font-family: 'Nunito', sans-serif;
+}
+.btn{
+  font-weight: 800;
+  text-transform: capitalize;
+  padding: 20px 30px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+.bg{
+  background: #273c66;
+}
+.btn_bg{
+  background: #21a7d0;
+}
+.text_white{
+  color: white;
+}
+.d-flex{
+  display: flex;
+}
+.align-items-center{
+  align-items: center;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.container{
+  width: 1170px;
+  margin: auto;
+}
+
+/* some default css ends. */
+
+
+
+/* top header css are starts... */
+.topHeader a{
+  color: white;
+}
+.topLeft.text_white a {
+  padding: 20px 0px;
+  display: block;
+}
+.topHeader a i {
+  margin-right: 3px;
+}
+.topLeft a:first-child {
+  padding-right: 10px;
+  border-right: 1px solid #4e586f;
+  margin-right: 10px;
+}
+.login_Register i {
+  margin-right: 5px;
+}
+
+.login_Register {
+  margin-right: 30px;
+}
+/* top header css ends. */
+
+
+/* primary menu css are starts now... */
+.logImages img {
+  width: 250px;
+}
+
+.logImages {
+  margin-right: 70px;
+}
+
+.menuItems {
+  margin-right: 70px;
+}
+.primary_menu a:hover{
+  color: #21a7d0;
+}
+ul.main_menu {
+  list-style: none;
+}
+ul.main_menu li a,.cetegorySelect a {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 55px 15px;
+  display: block;
+  font-size: 16px;
+  color: #444;
+  transition: all 0.5s;
+}
+ul.main_menu li:first-child a {
+  color: #21a7d0;
+}
+span.plusIcon::before {
+  content: "+";
+}
+ul.main_menu li a:hover span.plusIcon::before {
+  content: "-";
+  font-size: 14px;
+}
+.search_Cart {
+  width: 100px;
+  font-size: 16px;
+}
+
+.search_Cart a {
+  color: #444;
+}
+.search_Cart a:first-child {
+  border-right: 1px solid #444;
+  padding-right: 15px;
+}
+
+/* dropdown css are starts... */
+ul.subMenu {
+  width: 300px;
+  background: #17a9c9;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: all 0.4s;
+  z-index: 100;
+}
+div.megaMenu {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+div.megaMenu .categories {
+  background: #17a9c9;
+  padding: 20px;
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: 0.5s;
+}
+ul.main_menu li.dropdown:hover .subMenu {
+  transform: scaleY(1);
+  opacity: 1;
+}
+ul.main_menu li.dropdown_mega .megaMenu {
+  transform: scaleY(0);
+  opacity: 0;
+}
+ul.main_menu li.dropdown_mega:hover .megaMenu {
+  transform: scaleY(1);
+  opacity: 1;
+}
+ul.main_menu li.dropdown_mega:hover .megaMenu .categories {
+  transform: scaleY(1);
+  opacity: 1;
+}
+ul.main_menu li.dropdown::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+ul.main_menu li.dropdown:hover::after {
+  content: "-";
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+ul.main_menu li.dropdown_mega a span {
+  position: relative;
+  margin-left: 15px;
+}
+ul.main_menu li.dropdown_mega a span:after {
+  content: " +" !important;
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+ul.main_menu li.dropdown_mega:hover a span:after {
+  content: " -" !important;
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+/* .megaMenu {
+  padding: 20px;
+  color: white;
+} */
+ul.main_menu li.dropdown {
+  position: relative;
+}
+ul.main_menu li.dropdown_mega {
+  position: unset;
+}
+ul.subMenu li a {
+  padding: 10px 20px;
+  color: white !important;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+ul.subMenu li:first-child a {
+  padding-top: 20px;
+}
+ul.subMenu li:last-child a {
+  padding-bottom: 20px;
+}
+
+.megaMenu ul {
+  list-style: none;
+}
+
+.megaMenu ul li a {
+  color: white !important;
+  padding: 10px 0;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.megaMenu h3 {
+  color: white;
+  border-bottom: 1px solid #2595ad;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.categories_Box {
+  flex-basis: 30%;
+}
+/* dropdown css are ends */
+
+/* primarymenu css ends. */
+
+
+
+/* main start... */
+
+/* home slider section are starts... */
+.slider_wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 650px;
+}
+.slider {
+  position: relative;
+}
+.slider img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+.container.slider_inner {
+  height: 650px;
+}
+.slider_left_content h3 {
+  font-size: 50px;
+  color: white;
+  font-weight: 400;
+}
+.slider_left_content h1 {
+  font-size: 80px;
+  font-weight: 800;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.slider_left_content a{
+  border-radius: 3px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 16px;
+  transition: 0.4s;
+}
+.slider_left_content a:hover{
+  background: #16b7db;
+}
+button.slick-prev.slick-arrow {
+  left: 20px;
+  z-index: 2;
+}
+button.slick-next.slick-arrow {
+  right: 20px;
+  z-index: 2;
+}
+.slider_wrapper button.slick-prev-custom {
+  background: rgb(30, 167, 208);
+  border: none;
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  font-size: 17px;
+  position: absolute;
+  opacity: 0;
+  left: -50px;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .4s;
+  cursor: pointer;
+}
+
+.slider_wrapper button.slick-next-custom {
+  background: rgb(30, 167, 208);
+  border: none;
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  font-size: 17px;
+  position: absolute;
+  opacity: 0;
+  right: -50px;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .4s;
+  cursor: pointer;
+}
+.slider_wrapper:hover button.slick-prev-custom {
+  left: 30px;
+  opacity: 1;
+}
+.slider_wrapper:hover button.slick-next-custom {
+  right: 30px;
+  opacity: 1;
+}
+button.slick-prev-custom:hover {
+  background: #12c1e9;
+}
+button.slick-next-custom:hover {
+  background: #12c1e9;
+}
+/* home slider section ends. */
+
+
+
+/* highlight css are starts... */
+.h_box {
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+}
+.h_box img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  color: white;
+}
+
+.h_box .box_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%)  translateY(-50%);
+  display: grid;
+  place-items: center;
+}
+.h_box:before {
+  content: "";
+  position: absolute;
+  background: #273c6678;
+  width: 100%;
+  height: 100%;
+}
+.h_box:nth-child(2)::before {
+  background: #21a7d0ad;
+}
+.h_box:nth-child(3)::before {
+  background: #772bea8c;
+}
+.h_box:last-child::before {
+  background: #21a7d0ad;
+}
+.h_box:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.box_content h3 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.box_content i {
+  margin-bottom: 15px;
+  font-size: 50px;
+  color: white;
+}
+/* highlight css ends. */
+
+
+/* welcome section are starts here... */
+#welcome {
+  padding: 70px 0px;
+}
+.wel_left {
+  flex-basis: 28%;
+  background-color: #273c66;
+  padding: 90px 50px;
+  border-radius: 3px;
+}
+.wel_left h2 {
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.wel_left h6 {
+  color: #1ea7d0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.wel_left p{
+  color: white;
+  font-size: 0.875rem;
+  margin-top: 10px;
+  margin-bottom: 45px;
+  line-height: 30px;
+}
+.wel_left a {
+  margin-top: 25px;
+}
+.wel_right_parent {
+  flex-basis: 60%;
+}
+.wel_right_parent img {
+  width: 100%;
+}
+.wel_box {
+  padding: 40px 30px;
+  background: #ffa50063;
+  font-size: 2.8rem;
+  font-weight: 800;
+  flex-basis: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 39px;
+}
+
+.wel_box h4 {
+  color: #333;
+  font-weight: 800;
+  font-family: 'Nunito';
+  font-size: 2.5rem;
+}
+.wel_box h6 {
+  color: #333;
+  font-weight: 600;
+  font-family: 'Nunito';
+  font-size: 1.5rem;
+}
+
+.img_box {
+  width: 48%;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.wel_box:nth-child(2) {
+  background: #e9fbd5;
+}
+.wel_box:last-child {
+  background: #dcf1fd;
+}
+/* welcome section ends. */
+/* main ends. */
+
+
+/* cetegories section starts... */
+.cat_wrapper {
+  flex-wrap: wrap;
+}
+.cat_box {
+  width: 290px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(360deg, #122a58de, transparent);
+  height: 340px;
+  padding: 40px;
+  margin-bottom: 35px;
+  border-radius: 3px;
+  transition: 0.6s;
+}
+.cat_box:first-child {
+  background: white !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  width: 370px;
+}
+.cat_overlay {
+  background: #122a58c7;
+  color: white;
+  text-align: center;
+  height: 60%;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%) scaleX(0);
+  transform-origin: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.6s;
+}
+.cat_box:hover .cat_overlay {
+  transform: translateY(-50%) translateX(-50%) scaleX(1);
+  opacity: 1;
+}
+.cat_box:hover {
+  cursor: pointer;
+  background: none;
+}
+.cat_box img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+.cat_overlay h2 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.cat_overlay a {
+  width: 80px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+  border-bottom: 2px solid white;
+  display: inline;
+  margin: 0 auto;
+}
+.cat_overlay p {
+  line-height: 30px;
+  padding: 20px 0px;
+}
+h2.main_title {
+  position: absolute;
+  bottom: 30px;
+  font-weight: 700;
+  color: white;
+  font-size: 1.5rem;
+  opacity: 1;
+  transition: 0.6s;
+}
+.cat_box:hover h2.main_title {
+  bottom: -30px;
+  opacity: 0;
+}
+.cat_box:first-child h2 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #21a7d0;
+  margin-bottom: 10px;
+}
+
+.cat_box:first-child h4 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #122a58;
+}
+/* cetegories section end. */
+
+
+/* admission section css starts... */
+.admission_content {
+  width: 50%;
+  position: relative;
+}
+.admission_content img{
+  width: 100%;
+  height: 450px;
+}
+.admission_content:first-child {
+  color: white;
+}
+.admission_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.videoplayButto.d-flex.align-items-center.justify-content-between{
+  position: absolute;
+  bottom: 50px;
+  left: 85px;
+  width: 300px;
+
+}
+.videoplayButto.d-flex.align-items-center.justify-content-between h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 220px;
+  line-height: 35px;
+  text-transform: capitalize;
+}
+.tourIcon {
+  width: 60px;
+  height: 60px;
+  border: 5px solid white;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.admission_content:last-child .admission_overlay {
+  position: absolute;
+  top: 50% !important;
+  width: 500px !important;
+  left: 60px;
+  height: unset !important;
+  transform: translateY(-50%);
+}
+.admission_content:last-child .admission_overlay a {
+  padding: 15px 40px;
+  font-weight: 500;
+
+}
+.admission_content:last-child .admission_overlay p {
+  margin-bottom: 45px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #111;
+}
+.admission_content:last-child .admission_overlay h2 {
+  color: #111;
+  margin-bottom: 20px;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+.videoplayButto.d-flex.align-items-center.justify-content-between i {
+  font-size: 35px;
+}
+/* admission section css ends. */
